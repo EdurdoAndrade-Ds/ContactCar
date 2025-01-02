@@ -19,7 +19,7 @@
   <body>
     <form action="contact.php" method="get">
       <div class="text-center mb-4">
-        <img class="mb-4" src="./image.png" alt="" width="172" height="172">
+        <img class="mb-4" src="./img/car.png" alt="" width="172" height="172">
         <h1 class="h3 mb-3 font-weight-normal">Ricardo Araujo</h1>
         <p>Taxista | Motorista Particular</p>
       </div>
@@ -38,41 +38,15 @@
         <p>Numero de contato: <code>+55 (11) 97617-7611</code></p>
       </div>
 
+      <button id="btnVoltar" class="btn btn-lg btn-primary btn-block" type="button" onclick="location.href='Chekout.html';">Formas de Pagamento</button>
+
+
+
       <p class="mt-5 mb-3 text-muted text-center">&copy; EA | SYSTEM</p>
     </form>
   </body>
 </html>
 
-
-
-
-
-
-
-    <script>
-        document.getElementById('addContact').addEventListener('click', async () => {
-            if ('contacts' in navigator && 'ContactsManager' in window) {
-                try {
-                    // Dados do contato
-                    const contact = {
-                        name: "Ricardo Araujo",
-                        tel: ["+55 11 97617-7611"],
-                        email: ["ricardo.arj.santos@gmail.com"]
-                    };
-
-                    // Adicionar o contato
-                    await navigator.contacts.save([contact]);
-                    alert("Contato adicionado com sucesso!");
-                } catch (error) {
-                    console.error("Erro ao adicionar o contato:", error);
-                    alert("Não foi possível adicionar o contato.");
-                }
-            } else {
-                alert("Seu navegador não suporta a API de contatos. Por favor, use outra abordagem.");
-            }
-        });
-    </script>
-</body>
 </html>
 
 
