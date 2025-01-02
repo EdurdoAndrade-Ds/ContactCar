@@ -24,9 +24,10 @@ body.dark-mode {
     align-items: center;
     gap: 10px;
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 20px;
     cursor: pointer;
+    margin-top: -10px; 
 }
 
 .theme-toggle i {
