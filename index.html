@@ -9,17 +9,31 @@
 
     <title>Floating labels example for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
+ 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="floating-labels.css" rel="stylesheet">
+    
+    <link href="./css/floating-labels.css" rel="stylesheet">
   </head>
 
   <body>
+
+    <div class="topPage">
+      <div class="loader">
+        <div class="face">
+          <div class="circle"></div>
+        </div>
+        <div class="face">
+          <div class="circle">
+            </div>
+          </div>
+          <div class="number">Loading...</div>
+      </div>
+    </div>
+
     <form action="contact.php" method="get">
       <div class="text-center mb-4">
-        <img class="mb-4" src="./img/car.png" alt="" width="172" height="172">
+        <img id="minhaImagem" src="./img/taxi2.png" alt="Imagem rotativa">
         <h1 class="h3 mb-3 font-weight-normal">Ricardo Araujo</h1>
         <p>Taxista | Motorista Particular</p>
       </div>
@@ -52,3 +66,9 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<link rel="javascript" href="./js/script.js">
+
+<script src="./js/script.js"></script>
+
+

@@ -1,0 +1,225 @@
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+  --white: #fff;
+  --purple: #a729f5;
+
+
+  --bg-color: #f4f6fa;
+    --purple: #a729f5;
+    --primary-text-color: #313e51;
+    --secondary-text-color: #626c7f;
+    --button-bg: #fff;
+    --shadow: 8px 16px 40 px 8px rgba(143, 168, 193, 0.14);
+    --bg-html: #fff1e9;
+    --bg-css: #e0fdef;
+    --bg-javascript: #ebf9ff;
+    --bg-acessibilidade: #f6e7ff;
+    --white: #fff;
+    --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
+    --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+body.escuro {
+  --bg-color: #313e51;
+  --primary-text-color: #fff;
+  --secondary-text-color: #abc1e1;
+  --button-bg: #3b4d66;
+  --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; 
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+#back-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.topPage {
+
+  position: absolute;
+  top: 70px;
+  right: -1px;
+  left: -450px;
+  z-index: 1000;
+}
+
+.theme-toggle {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggle img {
+  width: 16px;
+}
+
+.theme-toggle button {
+  height: 20px;
+  width: 32px;
+  background: var(--purple);
+  border: 0;
+  border-radius: 999px;
+  padding: 4px;
+  display: flex;
+  cursor: pointer;
+}
+
+.theme-toggle button div {
+  background: var(--white);
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+}
+
+
+
+ /* Estilos Gerais */
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Claro */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Estilos do Botão de Alternância */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.theme-toggle i {
+  font-size: 1.2rem;
+}
+
+.toggle-switch {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 25px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: left 0.3s;
+}
+
+.toggle-switch.active {
+  background-color: #8e44ad;
+}
+
+.toggle-switch.active::before {
+  left: 25px;
+}
